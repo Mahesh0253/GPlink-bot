@@ -19,6 +19,10 @@
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
             "value": ""
+        },
+        "API_KEY": {
+            "description": "https://gplinks.in API key",
+            "required": false
         }
     },
     "addons": [],
