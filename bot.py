@@ -29,7 +29,7 @@ async def link_handler(bot, message):
         short_link = await get_shortlink(link)
         await message.reply(f'Here is your [short link]({short_link})', quote=True)
     except Exception as e:
-        await message.reply(f'Error: {e}')
+        await message.reply(f'Error: {e}', quote=True)
     
     
 async def get_shortlink(link): 
