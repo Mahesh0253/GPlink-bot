@@ -12,4 +12,4 @@ Generate [GPlink](https://gplinks.in/) by using your API key
 
 * `API_ID`: Get this value from [telgram.org](https://my.telegram.org/apps)
 * `API_HASH`: Get this value from [telgram.org](https://my.telegram.org/apps)
-* `API_KEY`: Get this value from [GPlink API](https://gplinks.in/member/tools/api)
+* `API_KEY`: Create [GPlink](https://gplinks.in/) account then get this value from [GPlink API](https://gplinks.in/member/tools/api)
