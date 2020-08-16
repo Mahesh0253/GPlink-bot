@@ -1,5 +1,5 @@
 # GPlink-bot
-
+Generate [GPlink](https://gplinks.in/) by using your API key
 ### Installation
 
 #### The Easy Way
