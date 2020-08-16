@@ -1,9 +1,15 @@
 # GPlink-bot
 
+### Installation
+
+#### The Easy Way
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ##### Required Variables
 
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
 
-* `API_ID`
-* `API_HASH`: Get these two values from [my.telegram.org/apps](https://my.telegram.org/apps).
+* `API_ID`: Get this value from [telgram.org](https://my.telegram.org/apps)
+* `API_HASH`: Get this value from [telgram.org](https://my.telegram.org/apps)
 * `API_KEY`: [GPlink](https://gplinks.in/) API key
