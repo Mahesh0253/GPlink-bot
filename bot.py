@@ -31,13 +31,15 @@ async def link_handler(bot, message):
     except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
 
-
+        
 async def get_shortlink(link):
-    url = 'https://gplinks.in/api'
-    params = {'api': API_KEY, 'url': link}
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"
+    url = "https://api.shorte.st/v1/data/url"
+    params = {"urlToShorten": link}
+    headers = {"user_agent": user_agent, "public-api-token":  API_KEY}
 
     async with aiohttp.ClientSession() as session:
-        async with session.get(url, params=params, raise_for_status=True) as response:
+        async with session.put(url, params=params, raise_for_status=True) as response:
             data = await response.json()
             return data["shortenedUrl"]
 
