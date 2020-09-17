@@ -39,7 +39,10 @@ async def get_shortlink(link):
     headers = {"user_agent": user_agent, "public-api-token":  API_KEY}
 
     async with aiohttp.ClientSession() as session:
-        async with session.put(url, params=params, raise_for_status=True) as response:
+        async with session.put(url, 
+                               headers=headers, 
+                               data=params, 
+                               raise_for_status=True) as response:
             data = await response.json()
             return data["shortenedUrl"]
 
