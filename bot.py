@@ -19,7 +19,7 @@ bot = Client('gplink bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm GPlink bot. Just send me link and get short link")
+        "I'm Shorte.st bot. Just send me link and get short link")
 
 
 @bot.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
@@ -39,7 +39,10 @@ async def get_shortlink(link):
     headers = {"user_agent": user_agent, "public-api-token":  API_KEY}
 
     async with aiohttp.ClientSession() as session:
-        async with session.put(url, data=params, raise_for_status=True) as response:
+        async with session.put(url, 
+                               headers=headers, 
+                               data=params, 
+                               raise_for_status=True) as response:
             data = await response.json()
             return data["shortenedUrl"]
 
