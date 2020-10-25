@@ -1,6 +1,6 @@
 {
     "name": "GPlink_Bot",
-    "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot. Create your Fork now.",
+    "description": "Make short link by using GPlink API key",
     "keywords": [
         "telegram",
         "gplink"
