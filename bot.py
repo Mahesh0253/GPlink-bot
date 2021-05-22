@@ -19,7 +19,7 @@ bot = Client('pdiskshortner bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm GPlink bot. Just send me link and get short link")
+        "I'm Pdisk link bot. Just send me link and get short link")
 
 
 @bot.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
